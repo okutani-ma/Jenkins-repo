@@ -1,0 +1,43 @@
+# Java
+target/
+bin/
+build/
+out/
+*.class
+
+# Package
+*.jar
+*.war
+*.ear
+
+# Log
+*.log
+
+# Eclipse
+.metadata/
+.settings/
+.classpath
+.project
+.recommenders/
+loadpath
+/.factorypath
+/.externalToolBuilders/
+.springBeans
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Tomcat や Jetty
+/.tomcat/
+/.jetty/
+.work/
+logs/
+
+# Eclipse の Web Tools Platform (WTP)
+tmp/
+wtpwebapps/
