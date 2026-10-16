@@ -18,7 +18,9 @@ pipeline{
         stage('Build') {
             steps {
                 // cleanを実行し、キャッシュなどを削除
-                bat 'mvn clean'
+                dir('my-app') {
+                    bat 'mvn clean'
+                }
             }
         }
 
