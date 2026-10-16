@@ -14,14 +14,14 @@ pipeline{
             }
         }
 
-        stages('Build') {
+        stage('Build') {
             steps {
                 // cleanを実行し、キャッシュなどを削除
                 bat 'mvn clean'
             }
         }
 
-        stages('Test') {
+        stage('Test') {
             steps {
                 // MavenでJUnitテストを実行
                 bat 'mvn test'
