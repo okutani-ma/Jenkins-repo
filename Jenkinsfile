@@ -8,12 +8,12 @@ pipeline{
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                url: 'https://github.com/okutani-ma/Jenkins-repo.git'
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         git branch: 'main',
+        //         url: 'https://github.com/okutani-ma/Jenkins-repo.git'
+        //     }
+        // }
 
         stage('Build') {
             steps {
@@ -29,6 +29,15 @@ pipeline{
                 // MavenでJUnitテストを実行
                 dir('my-app') {
                     bat 'mvn test'
+                }
+            }
+        }
+
+        stage('deploy') {
+            steps {
+
+                dir('my-app') {
+                    echo 'デプロイ実施'
                 }
             }
         }
