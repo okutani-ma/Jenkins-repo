@@ -3,7 +3,7 @@ pipeline{
 
     tools {
         // Jenkinsの管理 > Toolsで定義した環境変数を指定
-        jdk 'jdk25.0.2'
+        jdk 'JDK25.0.2'
         maven  'Maven3.10.0'
     }
 
