@@ -27,7 +27,9 @@ pipeline{
         stage('Test') {
             steps {
                 // MavenでJUnitテストを実行
-                bat 'mvn test'
+                dir('my-app') {
+                    bat 'mvn test'
+                }
             }
         }
     }
