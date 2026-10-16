@@ -10,7 +10,7 @@ pipeline{
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/okutani-ma/Jenkins-repo.git/my-app'
+                git 'https://github.com/okutani-ma/Jenkins-repo.git'
             }
         }
 
