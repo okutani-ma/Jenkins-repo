@@ -10,5 +10,7 @@ public class Calculator {
 
 		return price * count;
 	}
+
+	// test
 	
 }
