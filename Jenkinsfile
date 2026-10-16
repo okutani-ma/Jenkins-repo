@@ -33,6 +33,12 @@ pipeline{
             }
         }
 
+        stage('input') {
+            steps {
+                input message: 'Do you want to deploy to staging?', ok: 'Yes, let\'s do it!'
+            }
+        }
+
         stage('deploy') {
             steps {
 
